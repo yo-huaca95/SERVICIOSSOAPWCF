@@ -53,6 +53,10 @@
       <Project>{b393ba34-e51c-49a0-8853-1be943c53aa7}</Project>
       <Name>Pacagroup.Comercial.Creditos.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pacagroup.Comercial.Creditos.Fachada\Pacagroup.Comercial.Creditos.Fachada.csproj">
+      <Project>{7ddff651-a65b-4abc-a9e9-6fa82637be5f}</Project>
+      <Name>Pacagroup.Comercial.Creditos.Fachada</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

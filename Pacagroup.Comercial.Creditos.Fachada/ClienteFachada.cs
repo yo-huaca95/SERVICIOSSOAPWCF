@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Pacagroup.Comercial.Creditos.Fachada
 {
-    public class ClienteFachada
+    public class ClienteFachada:IDisposable
     {
         public Cliente ObtenerCliente(string NumeroDocumento)
         {
@@ -14,6 +14,11 @@ namespace Pacagroup.Comercial.Creditos.Fachada
         public IEnumerable<Cliente> ListarCliente()
         {
             throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);  
         }
     }
 }

@@ -7,15 +7,14 @@ namespace Pacagroup.Comercial.Creditos.Implementacion
 {
     public class ClienteService:IClienteService
     {
-        public IEnumerable<Cliente> ListarCliente()
-        {
-            throw new NotImplementedException();
-        }
-
         public Cliente ObtenerCliente(string NumeroDocumento)
         {
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Cliente> ListarCliente()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
