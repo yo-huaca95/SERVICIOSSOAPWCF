@@ -1,6 +1,8 @@
 ﻿using Pacagroup.Comercial.Creditos.Dominio;
 using System;
 using System.Collections.Generic;
+using Pacagroup.Comercial.Creditos.ContratoRepositorio;
+using Pacagroup.Comercial.Creditos.SqlRepositorio;
 
 namespace Pacagroup.Comercial.Creditos.Fachada
 {
@@ -8,12 +10,14 @@ namespace Pacagroup.Comercial.Creditos.Fachada
     {
         public Cliente ObtenerCliente(string NumeroDocumento)
         {
-            throw new NotImplementedException();
+            IClienteRepositorio instancia = new ClienteRepositorio();
+            return instancia.ObtenerCliente(NumeroDocumento);
         }
 
         public IEnumerable<Cliente> ListarCliente()
         {
-            throw new NotImplementedException();
+            IClienteRepositorio instancia = new ClienteRepositorio();
+            return instancia.ListarCliente();
         }
 
         public void Dispose()
